@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- Icon -->
+  <link rel="Icon" href="./Logo/Hotpot.png">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="Style.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Mono:wght@300;400&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to Rock Paper Scissor</h1>
+    <p>Choose your Weapon Against the AI</p>
+    <p>Rock, Paper, and Scissor</p>
+  </header>
+
+  <main>
+    <div class="score_board">
+      <h2 class="score_info" id="scoreInfo">Choose your Weapon</h2>
+      <h3 class="score_message" id="scoreMessage">First to get 3 points win the game</h3>
+
+      <div class="score_container">
+        <div class="score_box">
+          <p class="score" id="playerScore">Player: 0</p>
+        </div>
+
+        <div class="score_box">
+          <p class="score" id="computerScore">AI: 0</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="selection">
+      <button class="sign_button" id="rockButton" onclick="rock()"><img src="./Sign/Rock.svg" alt="Rock"></button>
+      <button class="sign_button" id="paperButton" onclick="paper()"><img src="./Sign/Paper.svg" alt="Paper"></button>
+      <button class="sign_button" id="scissorButton" onclick="scissor()"><img src="./Sign/Scissor.svg"
+          alt="Scissor"></button>
+    </div>
+
+    <button id="tryAgain" onclick="reset()"></button>
+  </main>
+
+  <footer>
+    <p>Copyright © 2023 <a href="https://github.com/TofuWithSoy">TofuWithSoy</a></p>
+    <img src="./Logo/github-142-svgrepo-com.svg" alt="Github Logo">
+  </footer>
+
+  <script src="Script.js"></script>
+</body>
+
+</html>
